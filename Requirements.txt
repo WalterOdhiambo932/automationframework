@@ -1,0 +1,40 @@
+robotframework >= 3.1.1
+robotframework-appiumlibrary >= 1.6.*
+
+Appium inspector => https://github.com/appium/appium-inspector/releases
+full(apis, mobile, web) => https://gitlab.safaricom.co.ke/quality-engineering/automationframework
+robot --version
+python -v or python3 -v
+pip3 install robotframework
+pip3 install robotframework-appiumlibrary
+pip3 install robotframework-seleniumlibrary
+Keywords documentation => https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html
+
+Get appActivity => adb shell dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+            OR  => adb shell dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp|mInputMethodTarget|mSurface'
+
+C.app
+------------
+    "platformName": "Android",
+    "appium:platformVersion": "11",
+    "appium:deviceName": "R9PN30CGD5J",
+    "appium:automationName": "UiAutomator2",
+    "appium:appPackage": "ke.testapp.com",
+    "appium:appActivity": "ke.testapp.com",
+    "appium:noReset": "true",
+    "appium:fullReset": "false",
+    "appium:captureScreenshots": "true"
+
+S.app
+------------
+https://gitlab.safaricom.co.ke/quality-engineering/automationframework/-/tree/Walter/TestApp
+    "automatorName": "UiAutomator2",
+    "platformName": "android",
+    "platformVersion": "13",
+    "appPackage": "com.safaricom.mysafaricom",
+    "appActivity": ".ui.main.MainActivity",
+    "deviceName": "1B091FDF600895",
+    "noReset": true,
+    "fullReset": false,
+    "captureScreenshots": true
+
