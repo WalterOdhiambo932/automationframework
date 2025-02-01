@@ -1,0 +1,21 @@
+
+Generate Token
+    [Tags]  Generate Token uat
+    Given user sets basic auth Username test1 and Password test2
+    And user adds cookies {"XSRF-TOKEN": "c878a80d-c7e7-4d24-8bf3-b1875f5430cqa"}
+    And user sets endpoint with base api https:
+    And user sets headers {"Content-Type":"application/x-www-form-urlencoded"}
+    And user sends a POST Request with query /oauth2/token?grant_type=client_credentials
+    Then user successfully generates token
+
+
+
+
+
+Testme
+  [Tags]     Test Report
+     Given user sets endpoint with base api ${baseurl}
+     And user sets headers ${headerse}
+     And user Adds Token
+     And user sends a GET Request with query  /endlink
+     Then user recieves valid HTTP response code ${response_code}
