@@ -199,10 +199,7 @@ https://www.pythontutorial.net/python-basics/install-pipenv-windows/
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 
-## Contributors
+## Contributor
 
- - Pauline Momanyi
- - Polycarp Kavoo
- - Justus Gitari
- - Barnaby Kamau
+Walter Odhiambo
 
